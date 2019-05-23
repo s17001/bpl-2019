@@ -2,12 +2,12 @@ version: '3'
 
 services:
   client:
-    build: ./client
+    build: ./nuxtdir
     ports:
       - 8080:8080
     volumes:
       - ./client:/app
-    command: yarn serve
+    command: yarn run dev
 
   server:
     build: ./server
